@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>let taille = 16; // taille initiale du texte
+        let increment = 4; // quantité d'agrandissement à chaque clic
+        let maxTaille = 32; // taille maximale du texte
+
+        // fonction qui agrandit le texte
+        function agrandirTexte() {
+            if (taille < maxTaille) {
+                taille += increment;
+                document.getElementById("texte").style.fontSize = taille + "px";
+            }
+        }
+
+        // fonction qui réduit le texte à sa taille initiale
+        function reduireTexte() {
+            taille = 16;
+            document.getElementById("texte").style.fontSize = taille + "px";
+        }
+
+        // ajouter un événement de clic pour agrandir le texte
+        document.getElementById("texte").addEventListener("click", agrandirTexte);
+
+        // ajouter un événement de clic pour réduire le texte
+        document.getElementById("bouton").addEventListener("click", reduireTexte);</script>
+
+</body>
+
+</html>

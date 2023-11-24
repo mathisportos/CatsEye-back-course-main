@@ -1,0 +1,9 @@
+{
+    "database": {
+        "host": "mysql.sio.local",
+        "port": 60302,
+        "user": "root",
+        "password": "Mathis",
+        "database": "catsEye"
+    }
+}
